@@ -52,41 +52,62 @@ export default function KitchenSinkPage() {
     <div className="container">
       <div className="grid gap-4 py-10">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
-          <ComponentCard title="Card" description="A simple card component">
-            <CardDemo className="w-[80%]" />
+          <ComponentCard
+            title="Card"
+            description="A simple card component"
+            href="card"
+          >
+            <CardDemo className="w-[80%]" isSinkDemo />
           </ComponentCard>
           <ComponentCard
             title="Slider"
             description="A slider component"
+            href="slider"
             className="mix-blend-multiply dark:mix-blend-screen"
           >
             <SliderDemo className="w-[80%]" />
           </ComponentCard>
-          <ComponentCard title="Checkbox" description="A checkbox component">
+          <ComponentCard
+            title="Checkbox"
+            description="A checkbox component"
+            href="checkbox"
+          >
             <CheckboxDemo />
           </ComponentCard>
           <ComponentCard
             title="Hover Card"
             description="An hover card component"
+            href="hover-card"
           >
             <HoverCardDemo />
           </ComponentCard>
           <ComponentCard
             title="Tabs"
             description="A tabs component"
+            href="tabs"
             className="[&>div]:w-[80%]"
           >
-            <TabsDemo />
+            <TabsDemo isSinkDemo />
           </ComponentCard>
-          <ComponentCard title="Menubar" description="A menubar component">
+          <ComponentCard
+            title="Menubar"
+            description="A menubar component"
+            href="menubar"
+          >
             <MenubarDemo />
           </ComponentCard>
-          <ComponentCard title="Avatar" description="An avatar component">
+          <ComponentCard
+            title="Avatar"
+            description="An avatar component"
+            href="avatar"
+            className="scale-[2]"
+          >
             <AvatarDemo />
           </ComponentCard>
           <ComponentCard
             title="Button"
             description="Some button components"
+            href="button"
             className="flex-col gap-4 py-10 mix-blend-multiply dark:mix-blend-screen"
           >
             <div className="flex space-x-2">
@@ -108,6 +129,7 @@ export default function KitchenSinkPage() {
           <ComponentCard
             title="Date Picker"
             description="A date picker component"
+            href="date-picker"
           >
             <DatePickerDemo />
           </ComponentCard>
@@ -115,6 +137,7 @@ export default function KitchenSinkPage() {
           <ComponentCard
             title="Accordion"
             description="An accordion component"
+            href="accordion"
             className="mx-auto w-[80%] py-10"
           >
             <AccordionDemo />
@@ -123,42 +146,73 @@ export default function KitchenSinkPage() {
           <ComponentCard
             title="Navigation Menu"
             description="A navigation menu component"
+            href="navigation-menu"
             className="[&_ul>li:last-child]:hidden"
           >
             <NavigationMenuDemo />
           </ComponentCard>
 
-          <ComponentCard title="Switch" description="A switch component">
+          <ComponentCard
+            title="Switch"
+            description="A switch component"
+            href="switch"
+          >
             <SwitchDemo />
           </ComponentCard>
-          <ComponentCard title="Select" description="A select component">
+          <ComponentCard
+            title="Select"
+            description="A select component"
+            href="select"
+          >
             <SelectDemo />
           </ComponentCard>
-          <ComponentCard title="Separator" description="A separator component">
+          <ComponentCard
+            title="Separator"
+            description="A separator component"
+            href="separator"
+          >
             <SeparatorDemo />
           </ComponentCard>
           <ComponentCard
             title="Aspect Ratio"
             description="An aspect ratio component"
+            href="aspect-ratio"
             className="w-[80%] mx-auto"
           >
             <AspectRatioDemo />
           </ComponentCard>
-          <ComponentCard title="Popover" description="A popover component">
+          <ComponentCard
+            title="Popover"
+            description="A popover component"
+            href="popover"
+          >
             <PopoverDemo />
           </ComponentCard>
-          <ComponentCard title="Toast" description="A toast component">
+          <ComponentCard
+            title="Toast"
+            description="A toast component"
+            href="toast"
+          >
             <ToastDemo />
           </ComponentCard>
-          <ComponentCard title="Tooltip" description="A tooltip component">
+          <ComponentCard
+            title="Tooltip"
+            description="A tooltip component"
+            href="tooltip"
+          >
             <TooltipDemo />
           </ComponentCard>
-          <ComponentCard title="Sheet" description="A sheet component">
+          <ComponentCard
+            title="Sheet"
+            description="A sheet component"
+            href="sheet"
+          >
             <SheetDemo />
           </ComponentCard>
           <ComponentCard
             title="Progress"
             description="A progress component"
+            href="progress"
             className="mix-blend-multiply dark:mix-blend-screen"
           >
             <ProgressDemo />
@@ -166,13 +220,15 @@ export default function KitchenSinkPage() {
           <ComponentCard
             title="Command"
             description="A command component"
+            href="command"
             className="w-[80%] mx-auto"
           >
-            <CommandDemo />
+            <CommandDemo isSinkDemo />
           </ComponentCard>
           <ComponentCard
             title="Radio"
             description="A radio component"
+            href="radio"
             className="[&>span]:h-[80px] [&>span]:w-[200px]"
           >
             <RadioGroupDemo />
@@ -180,23 +236,37 @@ export default function KitchenSinkPage() {
           <ComponentCard
             title="Context Menu"
             description="A context menu component"
+            href="context-menu"
             className="[&>span]:h-[80px] [&>span]:w-[200px]"
           >
             <ContextMenuDemo />
           </ComponentCard>
-          <ComponentCard title="Dropdown" description="A dropdown component">
+          <ComponentCard
+            title="Dropdown"
+            description="A dropdown component"
+            href="dropdown"
+          >
             <DropdownMenuDemo />
           </ComponentCard>
           <ComponentCard
             title="Alert Dialog"
             description="An alert dialog component"
+            href="alert-dialog"
           >
             <AlertDialogDemo />
           </ComponentCard>
-          <ComponentCard title="Dialog" description="A dialog component">
+          <ComponentCard
+            title="Dialog"
+            description="A dialog component"
+            href="dialog"
+          >
             <DialogDemo />
           </ComponentCard>
-          <ComponentCard title="Badge" description="A badge component">
+          <ComponentCard
+            title="Badge"
+            description="A badge component"
+            href="badge"
+          >
             <BadgeDemo />
             <BadgeSecondary />
             <BadgeDestructive />
@@ -206,6 +276,7 @@ export default function KitchenSinkPage() {
           <ComponentCard
             title="Skeleton"
             description="A skeleton component"
+            href="skeleton"
             className="w-[80%] mx-auto mix-blend-multiply dark:mix-blend-screen"
           >
             <SkeletonDemo />
@@ -214,12 +285,17 @@ export default function KitchenSinkPage() {
           <ComponentCard
             title="Collapsible"
             description="A collapsible component"
+            href="collapsible"
             className="[&>div]:w-[80%]"
           >
             <CollapsibleDemo />
           </ComponentCard>
 
-          <ComponentCard title="Toggle" description="A toggle component">
+          <ComponentCard
+            title="Toggle"
+            description="A toggle component"
+            href="toggle"
+          >
             <div className="flex space-x-2">
               <ToggleDemo />
               <ToggleOutline />
@@ -231,8 +307,9 @@ export default function KitchenSinkPage() {
           <ComponentCard
             title="Scroll Area"
             description="A scroll area component"
+            href="scroll-area"
           >
-            <ScrollAreaDemo />
+            <ScrollAreaDemo isSinkDemo />
           </ComponentCard>
         </div>
       </div>
@@ -259,15 +336,15 @@ function ComponentCard({
     <div className="flex flex-col transition-transform border rounded-lg bg-secondary text-secondary-foreground">
       <section
         className={cn(
-          "min-h-[150px] flex py-10 mt-auto justify-center items-center",
+          "min-h-[200px] flex py-10 mt-auto justify-center items-center",
           className
         )}
       >
         {children}
       </section>
       <Link
-        href={href ?? "#"}
-        className="w-full p-5 mt-auto transition-opacity bg-white rounded-lg rounded-t-none dark:bg-accent hover:opacity-[.85]"
+        href={href ? "/docs/components/" + href : "#"}
+        className="w-full p-5 mt-auto transition-opacity bg-white rounded-lg rounded-t-none dark:bg-accent hover:opacity-80"
       >
         <h3 className="mb-3 text-xl font-bold leading-none">{title}</h3>
         <p className="text-sm text-foreground opacity-60">{description}</p>
